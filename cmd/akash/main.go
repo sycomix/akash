@@ -22,6 +22,7 @@ func main() {
 	root.AddCommand(marketplaceCommand())
 	root.AddCommand(logsCommand())
 	root.AddCommand(common.VersionCommand())
+	root.AddCommand(lcdCommand())
 
 	if err := root.Execute(); err != nil {
 		os.Exit(1)
