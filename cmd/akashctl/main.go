@@ -55,6 +55,7 @@ func main() {
 		keys.Commands(),
 		pcmd.RootCmd(cdc),
 		version.Cmd,
+		autoBidCmd(cdc),
 		flags.NewCompletionCmd(root, true),
 	)
 
